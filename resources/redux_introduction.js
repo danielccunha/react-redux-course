@@ -34,12 +34,12 @@ const claimHistory = (oldListOfClaims = [], action) => {
   return oldListOfClaims;
 };
 
-const accounting = (bagOfMoney = 100.0, action) => {
+const accounting = (bagOfMoney = 100, action) => {
   if (action.type === "CREATE_CLAIM") {
     // We care about this action (Form!)
     return bagOfMoney - action.payload.amountOfMoney;
   } else if (action.type === "CREATE_POLICY") {
-    return bagOfMoney + action.payload.amountOfMoney;
+    return bagOfMoney + action.payload.amount;
   }
 
   // We don't care about this action (Form!)
@@ -68,6 +68,10 @@ const ourDepartments = combineReducers({
 
 const store = createStore(ourDepartments);
 
-const action = createPolicy("Alex", 20);
+store.dispatch(createPolicy("Alex", 30));
+store.dispatch(createPolicy("Daniel", 10));
+store.dispatch(createPolicy("Bella", 15));
 
-store.dispatch(action);
+store.dispatch(createClaim("Alex", 70));
+
+console.log(store.getState());
