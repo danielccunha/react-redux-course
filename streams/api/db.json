@@ -1,9 +1,22 @@
 {
   "streams": [
     {
-      "title": "Lorem",
-      "description": "Ipsum",
-      "id": 1
+      "title": "My stream",
+      "description": "This is my stream!",
+      "userId": "102898978419782094121",
+      "id": 2
+    },
+    {
+      "title": "Programming",
+      "description": "Learning react",
+      "userId": "102898978419782094121",
+      "id": 3
+    },
+    {
+      "title": "It's so easy",
+      "description": "Working with custom history",
+      "userId": "102898978419782094121",
+      "id": 4
     }
   ]
 }
