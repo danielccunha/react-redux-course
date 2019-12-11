@@ -60,6 +60,7 @@ export const editStream = (id, body) => async dispatch => {
     type: EDIT_STREAM,
     payload: data
   });
+  history.push("/");
 };
 
 export const deleteStream = id => async dispatch => {
