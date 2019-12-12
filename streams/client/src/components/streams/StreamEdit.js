@@ -34,8 +34,8 @@ class StreamEdit extends Component {
   }
 }
 
-const mapStateToProps = ({ stream }, { match }) => ({
-  stream: stream[match.params.id]
+const mapStateToProps = ({ streams }, { match }) => ({
+  stream: streams[match.params.id]
 });
 
 export default connect(mapStateToProps, { fetchStream, editStream })(

@@ -1,12 +1,6 @@
 {
   "streams": [
     {
-      "title": "My stream",
-      "description": "This is my stream!",
-      "userId": "102898978419782094121",
-      "id": 2
-    },
-    {
       "title": "Programming",
       "description": "Learning react",
       "userId": "102898978419782094121",
@@ -19,10 +13,10 @@
       "id": 4
     },
     {
-      "title": "Hey",
-      "description": "I'm refactoring! This edited!",
-      "id": 5,
-      "userId": "102898978419782094121"
+      "title": "Hearthstone",
+      "description": "Have you ever played this game?",
+      "userId": "102898978419782094121",
+      "id": 5
     }
   ]
 }
